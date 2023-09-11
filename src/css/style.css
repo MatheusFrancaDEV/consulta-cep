@@ -48,3 +48,14 @@
     border: none;
     border-radius: 8px;
 }
+#logradouro,
+#bairro{
+    display: none;
+    transition: .2s;
+}
+label[for = "logradouro"]{
+    display: none;
+}
+label[for = "bairro"]{
+    display: none;
+}
