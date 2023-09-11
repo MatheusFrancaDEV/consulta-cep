@@ -11,47 +11,49 @@
 }
 .content{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    padding: 5rem;
-    background-color: #374c5e;
-    height: 50vh;
+    padding: 1rem;
+    background-color: #242424;
+    height: 96.7vh;
 }
 #form{
     display: flex;
     flex-direction: column;
-    background-color: #466b8a;
-    color: #fff;
-    gap: .8rem  ;
-    padding: 1.5rem;
-    width: 100%;
-    max-width: 800px;
-    border-radius: 5px;
+    background-color: #dbdbdb;
+    padding: 2rem;
+    border-radius: 10px;
+    gap: .4rem;
 }
 #form input{
-    background-color: #374c5e;
-    color: #fff;
-    border: none;
-    outline: none;
-    padding: 1rem;
-    font-size: 1.1rem;
+    padding: .6rem;
     border-radius: 5px;
+    border: 1px solid #242424;
+    outline: none;
+    font-size: 1.1rem;
+    transition: .2s;
 }
 #form button{
     margin-top: .8rem;
-    width: 100%;
-    max-width: 160px;
-    padding: 1rem;
-    background-color: #295172;
+    background-color: #00e1ff;
+    padding: .8rem;
+    border: 1px solid #242424;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: .2s;
+}
+#form button:hover{
+    background-color: #0a8d9e;
     color: #fff;
-    border: none;
-    border-radius: 8px;
+    cursor: pointer;
+}
+#form input:hover{
+    background-color: #cecece;
 }
 #logradouro,
 #bairro{
-    display: none;
-    transition: .2s;
+    display: none;  
 }
 label[for = "logradouro"]{
     display: none;
